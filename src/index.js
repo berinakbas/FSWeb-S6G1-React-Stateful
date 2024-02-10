@@ -12,20 +12,10 @@ import Programcilar from './components/Programcilar';
 const container = document.getElementById("root");
 const root = createRoot(container)
 root.render(<>
-  
-  <Input />
   <Sayac />
-
+  //<RuhHalleri />
+  //<Dondurucu />
   <Input />
-  <Sayac />
-
-  <Input />
-  <Sayac />
-  {/* 
-  <Sayac />
-  <RuhHalleri />
-  <Dondurucu />
-  <Input />
-  <Kareler />
-  <Programcilar /> */}
+  //<Kareler />
+  //<Programcilar />
 </>);

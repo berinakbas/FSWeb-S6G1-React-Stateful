@@ -47,31 +47,28 @@ ADIM 6:
 
 import React, { useState } from 'react'; /* ADIM 0 buraya*/
 
-
 export default function Sayac() {
-  /* ADIM 1 buraya*/
-	//let sayici = 0; // native - vanilla script
    let [sayici, setSayici ] = useState(0);
-   
-   //console.log('sayici', sayici);
-  //useState({})
-  //useState('ali')
+
+  //let sayici = 0; // native - vanilla script. yukarıdaki kullanım şekli react
+  //console.log('sayici', sayici);
+  //useState({}) diğer kullanım şekli
+  //useState('ali') diğer kullanım şekli içi boş olmamalı ()
 	
   const artirici = () => {
-    /* ADIM 4 buraya */
-    //sayici++; // native - vanilla script
     setSayici(sayici + 1);
+    //sayici++; // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
   const azaltici = () => {
-    /* ADIM 5 */
-    //sayici--;  // native - vanilla script
     setSayici(sayici - 1);
+
+    //sayici--;  // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
   const reset = () => {
-    //sayici=0; // native - vanilla script
     setSayici(0);
+    //sayici=0; // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
 

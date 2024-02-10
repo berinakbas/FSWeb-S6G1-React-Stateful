@@ -28927,32 +28927,30 @@ ADIM 6:
 /* ADIM 0 buraya*/
 
 function Sayac() {
-  /* ADIM 1 buraya*/
-  //let sayici = 0; // native - vanilla script
   var _useState = (0, _react.useState)(0),
     _useState2 = _slicedToArray(_useState, 2),
     sayici = _useState2[0],
     setSayici = _useState2[1];
 
+  //let sayici = 0; // native - vanilla script. yukarıdaki kullanım şekli react
   //console.log('sayici', sayici);
-  //useState({})
-  //useState('ali')
+  //useState({}) diğer kullanım şekli
+  //useState('ali') diğer kullanım şekli içi boş olmamalı ()
 
   var artirici = function artirici() {
-    /* ADIM 4 buraya */
-    //sayici++; // native - vanilla script
     setSayici(sayici + 1);
+    //sayici++; // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
   var azaltici = function azaltici() {
-    /* ADIM 5 */
-    //sayici--;  // native - vanilla script
     setSayici(sayici - 1);
+
+    //sayici--;  // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
   var reset = function reset() {
-    //sayici=0; // native - vanilla script
     setSayici(0);
+    //sayici=0; // native - vanilla script kulanımı.yukarıdaki kullanım şekli react
     //console.log(sayici);
   };
   var stil = {
@@ -29376,7 +29374,7 @@ var _Programcilar = _interopRequireDefault(require("./components/Programcilar"))
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var container = document.getElementById("root");
 var root = (0, _client.createRoot)(container);
-root.render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Sayac.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Sayac.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Sayac.default, null)));
+root.render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Sayac.default, null), "//", /*#__PURE__*/_react.default.createElement(_RuhHalleri.default, null), "//", /*#__PURE__*/_react.default.createElement(_Dondurucu.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null), "//", /*#__PURE__*/_react.default.createElement(_Kareler.default, null), "//", /*#__PURE__*/_react.default.createElement(_Programcilar.default, null)));
 },{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js","./components/Sayac":"components/Sayac.js","./components/Input":"components/Input.js","./components/RuhHalleri":"components/RuhHalleri.js","./components/Dondurucu":"components/Dondurucu.js","./components/Kareler":"components/Kareler.js","./components/Programcilar":"components/Programcilar.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29402,7 +29400,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56817" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56277" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
